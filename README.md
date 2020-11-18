@@ -18,6 +18,6 @@ timeline of mentions, twitter activity by candidates, location data, sentiment a
 
 platform priorities detected/predicted by tweets?
 
-unsupervised learning
+unsupervised learning (policy issues? attacks?)
 
 pull tweet, location, user data separately? might be easier
