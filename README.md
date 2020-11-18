@@ -17,3 +17,5 @@ within a few points in primary, goes to runoff, but covid means need to change s
 timeline of mentions, twitter activity by candidates, location data, sentiment analysis
 
 platform priorities detected/predicted by tweets?
+
+unsupervised learning
