@@ -13,3 +13,5 @@ national awareness, huge endorsements on both sides (bernie, hillary, pelosi, fe
 no PAC, corporate money defeats $800,000 PAC, corporate funded incumbent
 
 within a few points in primary, goes to runoff, but covid means need to change strategy!
+
+timeline of mentions, twitter activity by candidates, location data, sentiment analysis
