@@ -12,29 +12,8 @@ This election was noteworthy for a number of reasons:
   * National attention (Bernie Sanders endorsed Nithya, Hillary/Pelosi/Feinstein endorsed Ryu)
   * Being LA, large celebrity endorsements on both sides
 
-I propose using a combination of Twitter API, tweepy, getoldtweets3 to look at tweets possibly going back as far as August 7, 2019 when Nithya announced her campaign.
+I propose using a combination of Twitter API, tweepy, getoldtweets3, python-twitter libraries to look at tweets possibly going back as far as August 7, 2019 when Nithya announced her campaign.
 
-I would like to focus on NLP, exploring the tweets using unsupervised learning (K-means), perform sentiment analysis, as well as hopefully use the geographic data.
+I would like to focus on NLP, exploring the tweets using unsupervised learning (K-means), perform sentiment analysis, as well as hopefully use the geographic data. Additionally would like to try out document clustering with Non-negative Matrix Factorization.
 
 Could platform priorities be detected or predicted by the tweets of the candidates? Do Raman or Ryu supporters have common traits? Can sentiment be detected beyond positive/negative (i.e. pro-Raman/anti-Ryu or vice-versa)?
-
-
-Academically interesting
-
-August 7th declared, 15 month campaign
-
-female, newcomer defeats incumbent, timing of election (a la presidential election), COVID factor
-
-national awareness, huge endorsements on both sides (bernie, hillary, pelosi, feinstein, celebs)
-
-no PAC, corporate money defeats $800,000 PAC, corporate funded incumbent
-
-within a few points in primary, goes to runoff, but covid means need to change strategy!
-
-timeline of mentions, twitter activity by candidates, location data, sentiment analysis (positive, negative, neutral, positive for nithya/negative ryu, positive ryu/negative nithya)
-
-platform priorities detected/predicted by tweets?
-
-unsupervised learning (policy issues? attacks?)
-
-pull tweet, location, user data separately? might be easier
