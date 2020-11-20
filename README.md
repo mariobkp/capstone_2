@@ -12,7 +12,7 @@ This election was noteworthy for a number of reasons:
   * National attention (Bernie Sanders endorsed Nithya, Hillary/Pelosi/Feinstein endorsed Ryu)
   * Being LA, large celebrity endorsements on both sides
 
-I propose using a combination of Twitter API, tweepy, getoldtweets3, python-twitter libraries to look at tweets possibly going back as far as August 7, 2019 when Nithya announced her campaign.
+I propose using a combination of Twitter API, tweepy, getoldtweets3, python-twitter libraries to look at tweets possibly going back as far as August 7, 2019 when Nithya announced her campaign. Open to suggestions on how to get the Twitter data, will be experimenting this weekend before solo week.
 
 I would like to focus on NLP, exploring the tweets using unsupervised learning (K-means), perform sentiment analysis, as well as hopefully use the geographic data. Additionally (time permitting) would like to try out document clustering (possibly with Non-negative Matrix Factorization).
 
