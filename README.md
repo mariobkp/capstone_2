@@ -17,3 +17,12 @@ I propose using a combination of Twitter API, tweepy, getoldtweets3, python-twit
 I would like to focus on NLP, exploring the tweets using unsupervised learning (K-means), perform sentiment analysis, as well as hopefully use the geographic data. Additionally (time permitting) would like to try out document clustering (possibly with Non-negative Matrix Factorization).
 
 Could platform priorities be detected or predicted by the tweets of the candidates? Do Raman or Ryu supporters have common traits? Can sentiment be detected beyond positive/negative (i.e. pro-Raman/anti-Ryu or vice-versa)?
+
+
+
+
+# Sentiment analysis of candidate tweets
+# Sentiment analysis of tweets at candidates
+# Ryu change over time
+# Predict Nithya or Ryu
+# NMF
