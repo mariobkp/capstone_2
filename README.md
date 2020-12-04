@@ -1,5 +1,12 @@
 # capstone_2
 
+
+<p align="center">
+
+  <img src="https://fivethirtyeight.com/wp-content/uploads/2017/10/twitterpolitics-4x3.jpg?w=600">
+
+</p>
+
 ![title_pic](https://fivethirtyeight.com/wp-content/uploads/2017/10/twitterpolitics-4x3.jpg?w=600)
 
 I proposed an examination of Tweets and Twitter data regarding the LA city council election for council district (CD) 4 between incumbent David Ryu and Nithya Raman.
@@ -19,6 +26,12 @@ I propose using a combination of Twitter API, tweepy, getoldtweets3, python-twit
 I would like to focus on NLP, exploring the tweets using unsupervised learning (K-means), perform sentiment analysis, as well as hopefully use the geographic data. Additionally (time permitting) would like to try out document clustering (possibly with Non-negative Matrix Factorization).
 
 Could platform priorities be detected or predicted by the tweets of the candidates? Do Raman or Ryu supporters have common traits? Can sentiment be detected beyond positive/negative (i.e. pro-Raman/anti-Ryu or vice-versa)?
+
+<p align="center">
+
+  <img src="https://techcrunch.com/wp-content/uploads/2015/10/twitter-politics.png?w=900">
+
+</p>
 
 ![next](https://techcrunch.com/wp-content/uploads/2015/10/twitter-politics.png?w=600&crop=1)
 
