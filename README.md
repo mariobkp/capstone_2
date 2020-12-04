@@ -397,3 +397,8 @@ Used same vectorization pipeline and tested on an XGBoost model with max depth o
 {0: 232, 1: 3663}
 
 ```
+<p align="center">
+
+  <img src="https://www.pewresearch.org/politics/wp-content/uploads/sites/4/2019/10/PL_19.10.21_Twitter_feature.png?resize=640,360">
+	
+</p>
