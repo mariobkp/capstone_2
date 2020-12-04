@@ -56,16 +56,27 @@ To start I just wanted to make some visuals of the data to see what I had.
 Nithya           |  David
 :-------------------------:|:-------------------------:
 ![](/images/nithya_tweet_count.png)  |  ![](/images/david_tweet_count.png)
-:-------------------------:|:-------------------------:
 ![](/images/nithya_word_per_tweet.png)  |  ![](/images/david_word_per_tweet.png)
 
 Here are the most common words per candidate:
 
-# Word cloud
+Nithya           |  David
+:-------------------------:|:-------------------------:
+![](/images/nithya_cloud.png)  |  ![](/images/david_cloud.png)
+
+And the combined:
+
+<p align="center">
+
+  <img src="/images/k_means_word_cloud.png?w=400">
+	
+</p>
 
 And here are the most common hashtags:
 
-# Word cloud
+Nithya           |  David
+:-------------------------:|:-------------------------:
+![](/images/nithya_hashtag.png)  |  ![](/images/david_hashtag.png)
 
 ## Classification and Feature Engineering
 
@@ -79,7 +90,11 @@ count_vect = CountVectorizer(lowercase=True, tokenizer=None, stop_words='english
 tfidf = TfidfVectorizer(lowercase=True, tokenizer=None, stop_words='english',
                              analyzer='word', max_features=1000)
 ```
-# example of TFIDF dense matrix
+<p align="center">
+
+  <img src="/images/tfidf_example.png?w=400">
+	
+</p>
 
 Decided to start with simplest model for purposes of starting to engineer the features, tested the above vectorizers with a logistic regression:
 
@@ -140,7 +155,11 @@ roc_auc_score for Logistic Regression:  0.957597812390528
 
 ```
 
-# Graph
+<p align="center">
+
+  <img src="/images/roc_score.png?w=600">
+	
+</p>
 
 I then continued to proceed with the Logistic Regression model but wanted to try optimizing with Stochastic Gradient Descent. The `SGDClassifier()` by default uses a linear Support Vector Classifier, but you can also use Logistic Regression. I also wanted to further tune the hyperparameters, so I employed the `GridSearchCV()` module:
 
@@ -184,19 +203,29 @@ I was then able to get a test set score of `0.943579766536965`.
 
 Naturally it is getting the best results with the most features, but I because this came back with n-gram range of (1,1) instead of the (1,2) I found earlier, I first wanted to see how accuracy changed not only with n-gram range, but also number of features:
 
-# graph
+<p align="center">
+
+  <img src="/images/n_gram_feat.png?w=600">
+	
+</p>
 
 I also wanted to use PCA to narrow down the feature set and identify where I can still get good accuracy with less features. I ran PCA on the entire set of Tweets, so ended up with 8223 features and plotted a scree plot for explained variance to see the inflection point:
 
-#Graphs
+:-------------------------:|:-------------------------:
+![](/images/scree.png)  |  ![](/images/exp_var.png)
 
 Part of what interested me in doing this NLP project was to see if I could quantify or demonstrate any shift in the political discourse throughout the election. Particularly, David Ryu seemed to change his positions and language often throughout the election. The challenger Nithya was much further left on the political spectrum, and when he saw her success he emulated her language and positions. When that did not work to his favor, he then swung back to the right in an effort to swoon moderates.
 
 I proceeded to use 3000 features for the rest of the tests as well as for looking at the principal components over time. I initially intended to look at Cosine Similarity to compare the tweets of the two candidates, but for the sake of visualization I went with PCA. I plotted the tweets along the first two principal components, as well as prominent terms with arrows corresponding to the loading within that principal component. I went back to August 2019, which is when Nithya Raman announced her candidacy:
 
-PCA
 
-Random Forest and out-of-the-box score
+<p align="center">
+
+  <img src="/images/gifs/movie.gif?w=600">
+	
+</p>
+
+Next I wanted to try classification using a Random Forest and see the untuned out-of-the-box score.
 
 Same `CountVectorizer()` with 3000 features and bigrams. With 100 estimators, OOB score of 94%, and on the test set 92.6%.
 
@@ -282,6 +311,13 @@ weighted avg       0.81      0.79      0.77      2056
 
 
 ```
+
+<p align="center">
+
+  <img src="/images/conf_matr.png?w=600">
+	
+</p>
+
 Not great! Let's do some hyperparameter tuning and see how we can improve that score:
 
 ```python
@@ -327,16 +363,23 @@ Used same vectorization pipeline and tested on an XGBoost model with max depth o
     weighted avg       0.85      0.84      0.84      3030
     
 ```
+<p align="center">
 
+  <img src="/images/ryu_raman_trump.png?w=600">
+	
+</p>
 
 
 # Miscellanea
 
-I became interested in Zipf's law and wanted to see how this feature engineering changes the distribution of words compared to a predicted Zipf distribution.
+* I became interested in Zipf's law and wanted to see how this feature engineering changes the distribution of words compared to a predicted Zipf distribution. I used the term frequencies from the TF-IDF vectorizer and plotted against a predicted Zipf line:
 
-I used the term frequencies from the TF-IDF vectorizer and plotted against a predicted Zipf line:
+<p align="center">
 
-# Graph
+  <img src="/images/zipf.png?w=600">
+	
+</p>
+
 
 * Fed Trump's tweets in vectorized format into the model trained on just Raman and Ryu and it overwhelmingly predicted Ryu. Difficult to say why or whether there is any credibility to the result as I didn't have much chance to explore further, but validated one of my motivations for this project to a certain degree:
 
