@@ -53,7 +53,11 @@ Because of the way I wrote the program (basically a list of lists), it was easy 
 
 To start I just wanted to make some visuals of the data to see what I had.
 
-# Graphs of numbers? tweets per month? average length of tweets (word count)? something with engagement?
+Nithya           |  David
+:-------------------------:|:-------------------------:
+![](/images/nithya_tweet_count.png)  |  ![](/images/david_tweet_count.png)
+:-------------------------:|:-------------------------:
+![](/images/nithya_word_per_tweet.png)  |  ![](/images/david_word_per_tweet.png)
 
 Here are the most common words per candidate:
 
