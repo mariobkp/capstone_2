@@ -68,7 +68,7 @@ And the combined:
 
 <p align="center">
 
-  <img src="/images/k_means_word_cloud.png?w=400">
+  <img src="/images/k_means_word_cloud_all_tokens.png?w=600">
 	
 </p>
 
