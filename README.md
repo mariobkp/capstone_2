@@ -213,13 +213,13 @@ I also wanted to use PCA to narrow down the feature set and identify where I can
 
 <p align="center">
 
-  <img src="/images/scree.png?w=400">
+  <img src="/images/scree.png">
 	
 </p>
 
 <p align="center">
 
-  <img src="/images/exp_var.png?w=400">
+  <img src="/images/exp_var.png">
 	
 </p>
 
