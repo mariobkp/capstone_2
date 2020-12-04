@@ -3,11 +3,9 @@
 
 <p align="center">
 
-  <img src="https://fivethirtyeight.com/wp-content/uploads/2017/10/twitterpolitics-4x3.jpg?w=600">
+  <img src="https://fivethirtyeight.com/wp-content/uploads/2017/10/twitterpolitics-4x3.jpg?w=900">
 
 </p>
-
-![title_pic](https://fivethirtyeight.com/wp-content/uploads/2017/10/twitterpolitics-4x3.jpg?w=600)
 
 I proposed an examination of Tweets and Twitter data regarding the LA city council election for council district (CD) 4 between incumbent David Ryu and Nithya Raman.
 
@@ -33,8 +31,6 @@ Could platform priorities be detected or predicted by the tweets of the candidat
 
 </p>
 
-![next](https://techcrunch.com/wp-content/uploads/2015/10/twitter-politics.png?w=600&crop=1)
-
 ## Scraping Data
 I was hoping to get clean Twitter data and metadata about the tweets in JSON format directly from the Twitter API in order to begin my project. Unfortunately it seems that fairly recently Twitter locked down much of their API and thus access to the data I needed. I did sign up for a Twitter developer account (and by process had to describe my project to Twitter to get approved), however with a free account I could only access Tweets from the past rolling 7 day period. Not a big enough window to even go back to the date of the election, let alone analyze the past Twitter activity of the candidates.
 
@@ -42,13 +38,15 @@ In locking down the API, Twitter also apparently cleaned up some "loopholes" tha
 
 Instead, I ended up using Selenium (highly recommend for ease of use, effectiveness, and it's is really fun) to create a program that can automatically scroll and scrape the most pertinent data (Twitter handle, timestamp, text, # of likes, # of comments, and # of retweets). I also parsed out and saved any emojis that I hoped to use (and maybe will in the future). I then saved the data in .csv format.
 
-# Screenshot of selenium bot?
-
 ## Cleaning Data
 Because of the way I wrote the program (basically a list of lists), it was easy to use Pandas and read the .csv files into DataFrames.
 
 
-# Show dataframe sample here
+<p align="center">
+
+  <img src="/images/df_example.png?w=400">
+	
+</p>
 
 
 # EDA
