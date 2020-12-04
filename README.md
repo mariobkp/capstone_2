@@ -78,7 +78,7 @@ Nithya           |  David
 :-------------------------:|:-------------------------:
 ![](/images/nithya_hashtag.png?w=300)  |  ![](/images/david_hashtag.png?w=300)
 
-## Classification and Feature Engineering
+## Classification and Feature Selection
 
 Checked on effectiveness of `CountVectorizer()` and `TfidfVectorizer` on getting all this text into a usable numerical form:
 
@@ -96,7 +96,7 @@ tfidf = TfidfVectorizer(lowercase=True, tokenizer=None, stop_words='english',
 	
 </p>
 
-Decided to start with simplest model for purposes of starting to engineer the features, tested the above vectorizers with a logistic regression:
+Decided to start with simplest model for purposes of starting to examine the features, tested the above vectorizers with a logistic regression:
 
 ```python
 
