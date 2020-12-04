@@ -62,7 +62,7 @@ Here are the most common words per candidate:
 
 Nithya           |  David
 :-------------------------:|:-------------------------:
-![](/images/nithya_cloud.png)  |  ![](/images/david_cloud.png)
+![](/images/nithya_cloud.png)  |  ![](/images/david_text.png)
 
 And the combined:
 
