@@ -1,6 +1,6 @@
 # capstone_2
 
-![title_pic](https://fivethirtyeight.com/wp-content/uploads/2017/10/twitterpolitics-4x3.jpg)
+![title_pic](https://fivethirtyeight.com/wp-content/uploads/2017/10/twitterpolitics-4x3.jpg?w=600)
 
 I proposed an examination of Tweets and Twitter data regarding the LA city council election for council district (CD) 4 between incumbent David Ryu and Nithya Raman.
 
@@ -20,7 +20,7 @@ I would like to focus on NLP, exploring the tweets using unsupervised learning (
 
 Could platform priorities be detected or predicted by the tweets of the candidates? Do Raman or Ryu supporters have common traits? Can sentiment be detected beyond positive/negative (i.e. pro-Raman/anti-Ryu or vice-versa)?
 
-
+![next](https://techcrunch.com/wp-content/uploads/2015/10/twitter-politics.png?w=600&crop=1)
 
 ## Scraping Data
 I was hoping to get clean Twitter data and metadata about the tweets in JSON format directly from the Twitter API in order to begin my project. Unfortunately it seems that fairly recently Twitter locked down much of their API and thus access to the data I needed. I did sign up for a Twitter developer account (and by process had to describe my project to Twitter to get approved), however with a free account I could only access Tweets from the past rolling 7 day period. Not a big enough window to even go back to the date of the election, let alone analyze the past Twitter activity of the candidates.
