@@ -1,6 +1,8 @@
 # capstone_2
 
-I propose an examination of Tweets and Twitter data regarding the LA city council election for council district (CD) 4 between incumbent David Ryu and Nithya Raman.
+![title_pic](https://fivethirtyeight.com/wp-content/uploads/2017/10/twitterpolitics-4x3.jpg)
+
+I proposed an examination of Tweets and Twitter data regarding the LA city council election for council district (CD) 4 between incumbent David Ryu and Nithya Raman.
 
 This election was noteworthy for a number of reasons: 
   * the incumbent David Ryu lost
