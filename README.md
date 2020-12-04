@@ -76,7 +76,7 @@ And here are the most common hashtags:
 
 Nithya           |  David
 :-------------------------:|:-------------------------:
-![](/images/nithya_hashtag.png)  |  ![](/images/david_hashtag.png)
+![](/images/nithya_hashtag.png?w=300)  |  ![](/images/david_hashtag.png?w=300)
 
 ## Classification and Feature Engineering
 
@@ -211,8 +211,17 @@ Naturally it is getting the best results with the most features, but I because t
 
 I also wanted to use PCA to narrow down the feature set and identify where I can still get good accuracy with less features. I ran PCA on the entire set of Tweets, so ended up with 8223 features and plotted a scree plot for explained variance to see the inflection point:
 
-:-------------------------:|:-------------------------:
-![](/images/scree.png)  |  ![](/images/exp_var.png)
+<p align="center">
+
+  <img src="/images/scree.png?w=400">
+	
+</p>
+
+<p align="center">
+
+  <img src="/images/exp_var.png?w=400">
+	
+</p>
 
 Part of what interested me in doing this NLP project was to see if I could quantify or demonstrate any shift in the political discourse throughout the election. Particularly, David Ryu seemed to change his positions and language often throughout the election. The challenger Nithya was much further left on the political spectrum, and when he saw her success he emulated her language and positions. When that did not work to his favor, he then swung back to the right in an effort to swoon moderates.
 
