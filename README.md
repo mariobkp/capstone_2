@@ -1,4 +1,4 @@
-# capstone_2
+# 2020 LA City Council District 4 Election: Twitter NLP Project
 
 
 <p align="center">
